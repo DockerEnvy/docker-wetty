@@ -14,6 +14,6 @@ RUN npm install && \
  echo 'term:term' | chpasswd
 
 EXPOSE 3000
-
+#The username is term and the password is term.
 ENTRYPOINT ["node"]
 CMD ["app.js", "-p", "3000"]
